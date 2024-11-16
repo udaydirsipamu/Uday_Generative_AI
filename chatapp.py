@@ -5,7 +5,7 @@ genai.configure(api_key="AIzaSyBpBRtvT1h6X9LIWWsrrQE9d9HAvBWUZEk")
 llm = genai.GenerativeModel('models/gemini-1.5-flash')
 chatbot = llm.start_chat(history=[])
 
-st.title("Welcome to the Chatbot")
+st.title(" 🤖 Welcome to the Chatbot")
 # Initialize session state for chat history if not already present
 if 'history' not in st.session_state:
     st.session_state.history = [("ai", "Hi there! I am a helpful AI assistant. How can I help you today?")]
